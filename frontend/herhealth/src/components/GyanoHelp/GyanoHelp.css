@@ -1,0 +1,216 @@
+/* GyanoHelp.css */
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.gyano-help-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.title {
+  color: #d73872;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.gyano-help-content {
+  line-height: 1.6;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 80vw;
+
+  position: relative;
+  text-align: center;
+}
+
+.health-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.health-section.show {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 1s ease-in-out forwards, slideIn 1s ease-in-out forwards;
+}
+
+/* Delay each section */
+.health-section:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.health-section:nth-child(3) {
+  animation-delay: 10s;
+}
+
+/* Reset animation for continuous loop */
+.health-section:nth-child(4) {
+  animation-delay: 0s;
+}
+
+@keyframes fadeInUp {
+  0%,
+  20% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  25%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0%,
+  20% {
+    transform: translateX(-30px);
+  }
+  25%,
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.health-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.health-content {
+  padding: 20px;
+  max-width: 100%;
+  text-align: center;
+}
+
+@keyframes textAnimation {
+  0%,
+  20% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  25%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.health-aspects {
+  margin-top: 30px;
+}
+
+.health-aspects h3 {
+  color: #d81b60;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.health-aspects p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Dropdown styles */
+.city-dropdown {
+  margin-top: 20px;
+  text-align: center;
+}
+.city-dropdown .btn-success {
+  background-color: #d73872; /* Pink color */
+  border-color: #d73872; /* Border color */
+}
+
+.city-dropdown .btn-success:hover,
+.city-dropdown .btn-success:focus,
+.city-dropdown .btn-success:active {
+  background-color: #c72760; /* Darker pink on hover/focus/active */
+  border-color: #c72760;
+}
+
+/* CityGynos styles */
+.city-gynos {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.city-gynos h3 {
+  color: #d81b60;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Updated styles for gyno-cards */
+.gyno-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px; /* Adjust margin-top as needed */
+}
+
+/* Set width dynamically based on number of cards */
+.gyno-card {
+  flex: 1 0 calc(50% - 20px); /* Two cards take 50% width */
+  margin: 10px; /* Adjust margin as needed */
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* If there are 3 cards, adjust width to 35% for each card */
+@media (min-width: 768px) {
+  .gyno-cards .gyno-card {
+    flex: 1 0 calc(35% - 20px); /* Three cards take 35% width */
+  }
+}
+
+.gyno-card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.gyno-card .card-title {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.gyno-card .card-text {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}

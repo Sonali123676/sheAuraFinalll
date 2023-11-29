@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.ques {
+  display: flex;
+  justify-content: space-between;
+}
+.form-body {
+  background: linear-gradient(90deg, #ffbdd7, #ecb2c1);
+}
+
+.wave-container {
+  position: relative;
+  height: 150px; /* Adjust the height of the wave container as needed */
+  overflow: hidden;
+  background: linear-gradient(90deg, #ffbdd7, #ecb2c1);
+}
+
+.wave {
+  background: url("C:/Users/DELL/OneDrive/Desktop/HerHealth/frontend/herhealth/src/images/wave.png");
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%; /* Double the width to ensure coverage */
+  height: 80%;
+  animation: wave 7s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      -40%
+    ); /* Adjust this value based on the width of your container */
+  }
+}
+
+/* Style for the form container */
+.body-3 {
+  display: flex;
+
+  flex-direction: row; /* Align items vertically */
+  background: linear-gradient(90deg, #ffbdd7, #ecb2c1);
+  padding: 20px;
+}
+.head {
+  margin-top: 20px;
+}
+.heading {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+  font-family: "Dancing Script", cursive;
+  font-family: "Poppins", sans-serif;
+  color: #a80539;
+}
+/* Style for the form inside the container */
+.form {
+  max-width: 700px;
+  /* width: 45%; */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Space between heading and form */
+}
+.explanation h5 {
+  font-size: 2.1rem;
+  margin-bottom: 15px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Add text shadow */
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.explanation p {
+  font-size: 1.2rem;
+  color: #666;
+  /* Add fade-in animation */
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  color: #ca1a61;
+  width: 100%;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.result-container {
+  margin-top: 20px; /* Add margin to separate the result from the form */
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  padding: 20px; /* Add padding for better visual appeal */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  background: #f9f5f8;
+  width: 90%;
+  height: 80%;
+  margin: 35px;
+
+  margin-bottom: 20px;
+}
+
+.result-heading {
+  font-weight: bold;
+  font-size: 24px;
+  color: #ca1a61;
+  margin-bottom: 10px;
+}
+
+.result-text {
+  font-size: 18px;
+  color: #333;
+}
+
+.button {
+  background-color: #ca1a61;
+  border: none;
+  border-radius: 15px;
+  width: 100%;
+  color: #fff;
+  padding: 15px; /* Increased padding for a larger button */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #ff6a99;
+}
+
+/* Center the button text */
+.button span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Icon style (if you have an icon inside the button) */
+.button i {
+  margin-right: 8px; /* Adjust the spacing between the icon and text */
+}
+.form-container {
+  width: 45%; /* Adjust as needed */
+}
+
+.explanation-container {
+  flex: 1;
+  padding: 50px;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.explanation-container p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* .explanation {
+  width: 45%; 
+} */
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+  .body {
+    flex-direction: column; /* On smaller screens, switch to a single column layout */
+    align-items: center; /* Center items on smaller screens */
+  }
+
+  .form,
+  .explanation {
+    width: 100%; /* Full width on smaller screens */
+  }
+}

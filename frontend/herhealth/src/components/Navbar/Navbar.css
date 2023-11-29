@@ -1,0 +1,54 @@
+/* Customize the styles as needed */
+
+.event-Image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* ... Previous CSS styles ... */
+
+.navbar {
+  background-color: #ff5599;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: auto; /* Push the navigation links to the left as much as possible */
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #e82b77;
+  }
+}
+
+.logout-button {
+  background: #e82b77;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background: #ff6699;
+  }
+}

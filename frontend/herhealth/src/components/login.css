@@ -1,0 +1,75 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the left half with the background color #F875AA */
+.left-half {
+  background-color: #f875aa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 20px;
+}
+
+.body {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Style for the right half with the background color #FFC0CB */
+.right-half {
+  background-color: #ffc0cb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 20px;
+}
+
+/* Style for the form inside the right half */
+form {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Center the form content */
+}
+
+/* Style for form labels */
+.form-label {
+  font-weight: bold;
+  margin-left: 0;
+  color: #ca1a61;
+}
+
+/* Style for form inputs */
+.form-control {
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for buttons */
+.button {
+  background-color: #e82b77;
+  border: none;
+  border-radius: 15px;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  transition: background-color 0.3s; /* Add a smooth transition effect on hover */
+
+  &:hover {
+    background-color: #ff6a99; /* Lighter color on hover */
+  }
+}
+
+/* Additional styles for form elements can be added here */

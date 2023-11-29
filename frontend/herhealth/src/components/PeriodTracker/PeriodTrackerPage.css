@@ -1,0 +1,149 @@
+/* PeriodTrackerPage.css */
+/* .body-2 {
+  background: url("C:\Users\DELL\OneDrive\Desktop\HerHealth\frontend\herhealth\src\images\bg.png")
+    repeat 0 0;
+  animation: animate 4s infinite;
+  animation-timing-function: linear;
+}
+@keyframes animate {
+  100% {
+    background-position: 1200px 1200px;
+  }
+} */
+.body-2 {
+  background: url("C:\Users\DELL\OneDrive\Desktop\HerHealth\frontend\herhealth\src\images\bg-3.png")
+    repeat 0 0;
+  animation: animate 10s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 3000px 3000px;
+  }
+}
+
+.intro-container,
+.heading {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  /* Add fade-in animation */
+}
+.heading {
+  animation: fadeInUp 1s ease-in-out;
+}
+.heading h1 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  animation: scaleIn 1s ease-in-out;
+  font-family: "Poppins", sans-serif; /* Add scale-in animation */
+}
+.heading p {
+  animation: fadeIn 1.5s ease-in-out;
+  font-family: "Dancing Script", cursive;
+  font-size: xx-large;
+  color: #ca1a61;
+}
+
+.intro-container h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add text shadow */
+}
+
+.intro-container p {
+  font-size: 1.2rem;
+  color: #666;
+  /* Add fade-in animation */
+}
+
+/* Add keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.period-tracker-container {
+  max-width: 520px;
+  width: 100%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.period-tracker-container h2 {
+  color: #ca1a61;
+}
+
+.period-tracker-container form {
+  margin-bottom: 20px;
+}
+
+.period-tracker-container label {
+  display: block;
+  margin-bottom: 10px;
+  color: #ca1a61;
+}
+
+.period-tracker-container input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.period-tracker-container button {
+  background-color: #e82b77;
+  border: none;
+  border-radius: 15px;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.button-container button {
+  margin-bottom: 10px;
+}
+.period-tracker-container button:hover {
+  background-color: #ff6a99;
+}
+
+.period-tracker-container h3 {
+  color: #ca1a61;
+  margin-top: 20px;
+}

@@ -1,0 +1,225 @@
+/* Add this to your CSS file or create a new one for your footer
+
+.footer {
+  background-color: #1b1b1b;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  flex: 1;
+}
+
+.footer-item-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00b3e3;
+}
+
+.brand-text {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.brand-shape {
+  font-size: 32px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.copyright-text {
+  margin-top: 20px;
+} */
+/* .footer {
+    background-color: #e82b77;
+    color: black;
+    padding: 40px 0;
+    font-family: "Arial", sans-serif; 
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .footer-item-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #c4c4c4;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #00b3e3;
+  }
+  
+  .brand-text {
+    font-size: 28px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .brand-shape {
+    font-size: 38px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #00b3e3;
+    padding: 8px;
+    border-radius: 50%;
+    color: #fff;
+  } */
+/* Add this to your CSS file or create a new one for your footer */
+
+/* .footer {
+  background-color: #1b1b1b;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  flex: 1;
+}
+
+.footer-item-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00b3e3;
+}
+
+.brand-text {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.brand-shape {
+  font-size: 32px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.copyright-text {
+  margin-top: 20px;
+}
+
+.footer-element-1,
+.footer-element-2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-height: 100px;
+} */
+.footer {
+  color: #fff;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-item {
+  flex: 1;
+  padding: 0 20px; /* Adjust padding for spacing */
+  max-width: 50%; /* Each item takes up half the width */
+}
+
+.footer-item-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #c4c4c4; /* Adjust link color */
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00b3e3;
+}
