@@ -20,7 +20,7 @@ app = Flask(__name__)
 CORS(app, supports_credentials=True)
 pickled_model = pickle.load(
     open(
-        "C:\check1\OvarianAI-Predicting-PCOS-using-artificial-intelligence\modelfinal1.pkl",
+        "C:\\Users\\Komal\\Downloads\\modelfinal1.pkl",
         "rb",
     )
 )

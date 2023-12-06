@@ -18,7 +18,7 @@
 }
 
 .wave {
-  background: url("C:/Users/DELL/OneDrive/Desktop/HerHealth/frontend/herhealth/src/images/wave.png");
+  background: url("C:\Users\Komal\OneDrive\Documents\web dev\sheAura\sheAuraFinalll\frontend\herhealth\src\images\wave.png");
   position: absolute;
   bottom: 0;
   left: 0;
@@ -47,16 +47,16 @@
   padding: 20px;
 }
 .head {
-  margin-top: 20px;
+  margin-top:30px;
+  
 }
-.heading {
+.heading h2 {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
   animation: fadeInUp 1s ease-in-out;
-  font-family: "Dancing Script", cursive;
   font-family: "Poppins", sans-serif;
-  color: #a80539;
+  color: #ca1a61;
 }
 /* Style for the form inside the container */
 .form {

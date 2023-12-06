@@ -19,11 +19,12 @@
 .home {
   display: flex;
   flex-direction: row;
-  height: 93vh;
+  height: 120vh;
   background-color: rgb(255, 255, 255), 255, 255;
 }
 .home-content {
-  line-height: 2.8rem;
+  line-height: 2rem;
+  /* height: 80rem; */
   padding: 50px;
   background-color: #fff;
   box-shadow: #781c3d;

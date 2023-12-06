@@ -1,17 +1,6 @@
-/* PeriodTrackerPage.css */
-/* .body-2 {
-  background: url("C:\Users\DELL\OneDrive\Desktop\HerHealth\frontend\herhealth\src\images\bg.png")
-    repeat 0 0;
-  animation: animate 4s infinite;
-  animation-timing-function: linear;
-}
-@keyframes animate {
-  100% {
-    background-position: 1200px 1200px;
-  }
-} */
+
 .body-2 {
-  background: url("C:\Users\DELL\OneDrive\Desktop\HerHealth\frontend\herhealth\src\images\bg-3.png")
+  background: url("C:\Users\Komal\OneDrive\Documents\web dev\sheAura\sheAuraFinalll\frontend\herhealth\src\images\bg-3.png")
     repeat 0 0;
   animation: animate 10s infinite;
   animation-timing-function: linear;

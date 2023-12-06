@@ -47,11 +47,12 @@ const Footer = () => {
           <p>
             Sonali Sadana
             <br />
+            Komal Aggarwal
+            <br/>
             Kashish Garg
             <br />
             Mayank Gera
-            <br />
-            {/* Komal Aggarwal */}
+            
           </p>
         </div>
       </div>
